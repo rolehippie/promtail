@@ -1,0 +1,68 @@
+# Standards: 1.2
+---
+- name: Create required directories
+  loop: "{{ promtail_default_folders + promtail_extra_folders }}"
+  file:
+    path: "{{ item }}"
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+    state: directory
+  tags:
+    - promtail
+
+- name: Write general config
+  notify:
+    - Restart promtail
+  template:
+    src: config.j2
+    dest: /etc/promtail/config.yml
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - promtail
+
+- name: Write default config
+  notify:
+    - Restart promtail
+  template:
+    src: default.j2
+    dest: /etc/default/promtail
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - promtail
+
+- name: Write service file
+  notify:
+    - Restart promtail
+  template:
+    src: service.j2
+    dest: /etc/systemd/system/promtail.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - promtail
+
+- name: Pull docker image
+  when: promtail_pull_image
+  docker_image:
+    name: "{{ promtail_image }}"
+    source: pull
+  tags:
+    - promtail
+
+- name: Start promtail service
+  systemd:
+    name: promtail
+    state: started
+    daemon_reload: True
+    masked: False
+    enabled: True
+  tags:
+    - promtail
+
+...

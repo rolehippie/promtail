@@ -1,0 +1,9 @@
+# Standards: 1.2
+---
+- name: Restart promtail
+  systemd:
+    name: promtail
+    state: restarted
+    daemon_reload: True
+
+...

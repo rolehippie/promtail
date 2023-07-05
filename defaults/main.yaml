@@ -1,0 +1,82 @@
+# Standards: 1.2
+---
+# @var promtail_version:description: Version of the release to install
+# renovate: datasource=github-releases depName=grafana/loki
+promtail_version: 2.8.2
+
+# @var promtail_image:description: Docker image to use for deployment
+promtail_image: "grafana/promtail:{{ promtail_version }}"
+
+# @var promtail_pull_image:description: Pull image as part of the tasks
+promtail_pull_image: True
+
+# @var promtail_network:description: Optional docker network to attach
+promtail_network:
+
+# @var promtail_default_publish:description: List of default port publishing for docker
+# @var promtail_default_publish:example: >
+# promtail_default_publish:
+#   - 127.0.0.1:3100:3100
+# @end
+promtail_default_publish: []
+
+# @var promtail_extra_publish:description: List of extra port publishing for docker
+# @var promtail_extra_publish:example: >
+# promtail_extra_publish:
+#   - 127.0.0.1:3100:3100
+# @end
+promtail_extra_publish: []
+
+# @var promtail_default_labels:description: List of default labels to assign to docker
+promtail_default_labels: []
+
+# @var promtail_extra_labels:description: List of extra labels to assign to docker
+promtail_extra_labels: []
+
+# @var promtail_default_folders:description: List of default folders to create
+promtail_default_folders:
+  - /etc/promtail
+
+# @var promtail_extra_folders:description: List of extra folders to create
+# @var promtail_extra_folders:example: >
+# promtail_extra_folders:
+#   - /path/to/host/folder1
+#   - /path/to/host/folder2
+#   - /path/to/host/folder3
+# @end
+promtail_extra_folders: []
+
+# @var promtail_default_volumes:description: List of default volumes to mount for docker
+promtail_default_volumes:
+  - /etc/promtail:/etc/promtail
+
+# @var promtail_extra_volumes:description: List of extra volumes to mount for docker
+# @var promtail_extra_volumes:example: >
+# promtail_extra_volumes:
+#   - /path/to/host/folder1:/path/within/container1
+#   - /path/to/host/folder2:/path/within/container2
+#   - /path/to/host/folder3:/path/within/container3
+# @end
+promtail_extra_volumes: []
+
+# @var promtail_client_configs:description: List of client configs for Promtail
+# @var promtail_client_configs:example: >
+# promtail_client_configs:
+#   - url: http://loki.example.com/promtail/api/v1/push
+# @end
+promtail_client_configs: []
+
+# @var promtail_scrape_configs:description: List of scrape configs for Promtail
+# @var promtail_scrape_configs:example: >
+# promtail_scrape_configs:
+#   - job_name: system
+#     static_configs:
+#       - targets:
+#           - localhost
+#         labels:
+#           job: varlogs
+#           __path__: /var/log/*log
+# @end
+promtail_scrape_configs: []
+
+...
