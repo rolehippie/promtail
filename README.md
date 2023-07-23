@@ -236,7 +236,7 @@ Version of the release to install
 #### Default value
 
 ```YAML
-promtail_version: 2.8.2
+promtail_version: 2.8.3
 ```
 
 ## Discovered Tags
