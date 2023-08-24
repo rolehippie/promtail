@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/rolehippie/promtail/compare/v1.0.2...v1.1.0) (2023-08-24)
+
+
+### Features
+
+* add optional defaults for cpu and memory limit ([1059942](https://github.com/rolehippie/promtail/commit/105994215fd0c1a17d6bf66a453740923db8a988))
+
 ## [1.0.2](https://github.com/rolehippie/promtail/compare/v1.0.1...v1.0.2) (2023-08-14)
 
 
