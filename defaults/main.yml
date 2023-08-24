@@ -59,6 +59,26 @@ promtail_default_volumes:
 # @end
 promtail_extra_volumes: []
 
+# @var promtail_memory_limit:description: Memory limit with Docker deployment
+# @var promtail_memory_limit:example: $ "1024m"
+promtail_memory_limit:
+
+# @var promtail_memory_swap:description: Swap usage with Docker deployment
+# @var promtail_memory_swap:example: $ "2048m"
+promtail_memory_swap:
+
+# @var promtail_memory_soft_limit:description: Soft memory limit with Docker deployment
+# @var promtail_memory_soft_limit:example: $ "512m"
+promtail_memory_soft_limit:
+
+# @var promtail_cpu_shares:description: CPU shares with Docker deployment
+# @var promtail_cpu_shares:example: $ "512"
+promtail_cpu_shares:
+
+# @var promtail_number_of_cpus:description: Number of CPUs with Docker deployment
+# @var promtail_number_of_cpus:example: $ "1.0"
+promtail_number_of_cpus:
+
 # @var promtail_client_configs:description: List of client configs for Promtail
 # @var promtail_client_configs:example: >
 # promtail_client_configs:

@@ -2,7 +2,7 @@
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/promtail)
 [![General Workflow](https://github.com/rolehippie/promtail/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/promtail/actions/workflows/general.yml)
-[![Readme Workflow](https://github.com/rolehippie/promtail/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/promtail/actions/workflows/readme.yml)
+[![Readme Workflow](https://github.com/rolehippie/promtail/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/promtail/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/promtail/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/promtail/actions/workflows/galaxy.yml)
 [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/promtail)](https://github.com/rolehippie/promtail/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/role-rolehippie.promtail-blue)](https://galaxy.ansible.com/rolehippie/promtail)
@@ -18,6 +18,7 @@ Building and improving this Ansible role have been sponsored by my current and p
 - [Requirements](#requirements)
 - [Default Variables](#default-variables)
   - [promtail_client_configs](#promtail_client_configs)
+  - [promtail_cpu_shares](#promtail_cpu_shares)
   - [promtail_default_folders](#promtail_default_folders)
   - [promtail_default_labels](#promtail_default_labels)
   - [promtail_default_publish](#promtail_default_publish)
@@ -27,7 +28,11 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [promtail_extra_publish](#promtail_extra_publish)
   - [promtail_extra_volumes](#promtail_extra_volumes)
   - [promtail_image](#promtail_image)
+  - [promtail_memory_limit](#promtail_memory_limit)
+  - [promtail_memory_soft_limit](#promtail_memory_soft_limit)
+  - [promtail_memory_swap](#promtail_memory_swap)
   - [promtail_network](#promtail_network)
+  - [promtail_number_of_cpus](#promtail_number_of_cpus)
   - [promtail_pull_image](#promtail_pull_image)
   - [promtail_scrape_configs](#promtail_scrape_configs)
   - [promtail_version](#promtail_version)
@@ -60,6 +65,22 @@ promtail_client_configs: []
 ```YAML
 promtail_client_configs:
   - url: http://loki.example.com/promtail/api/v1/push
+```
+
+### promtail_cpu_shares
+
+CPU shares with Docker deployment
+
+#### Default value
+
+```YAML
+promtail_cpu_shares:
+```
+
+#### Example usage
+
+```YAML
+promtail_cpu_shares: '512'
 ```
 
 ### promtail_default_folders
@@ -186,6 +207,54 @@ Docker image to use for deployment
 promtail_image: grafana/promtail:{{ promtail_version }}
 ```
 
+### promtail_memory_limit
+
+Memory limit with Docker deployment
+
+#### Default value
+
+```YAML
+promtail_memory_limit:
+```
+
+#### Example usage
+
+```YAML
+promtail_memory_limit: 1024m
+```
+
+### promtail_memory_soft_limit
+
+Soft memory limit with Docker deployment
+
+#### Default value
+
+```YAML
+promtail_memory_soft_limit:
+```
+
+#### Example usage
+
+```YAML
+promtail_memory_soft_limit: 512m
+```
+
+### promtail_memory_swap
+
+Swap usage with Docker deployment
+
+#### Default value
+
+```YAML
+promtail_memory_swap:
+```
+
+#### Example usage
+
+```YAML
+promtail_memory_swap: 2048m
+```
+
 ### promtail_network
 
 Optional docker network to attach
@@ -194,6 +263,22 @@ Optional docker network to attach
 
 ```YAML
 promtail_network:
+```
+
+### promtail_number_of_cpus
+
+Number of CPUs with Docker deployment
+
+#### Default value
+
+```YAML
+promtail_number_of_cpus:
+```
+
+#### Example usage
+
+```YAML
+promtail_number_of_cpus: '1.0'
 ```
 
 ### promtail_pull_image

@@ -17,6 +17,21 @@ ExecStart=/usr/bin/docker run --rm \
   --name %p \
   --hostname %p \
   --env-file /etc/default/promtail \
+{% if promtail_memory_limit | default(False) %}
+  --memory {{ promtail_memory_limit }} \
+{% endif %}
+{% if promtail_memory_swap | default(False) %}
+  --memory-swap {{ promtail_memory_swap }} \
+{% endif %}
+{% if promtail_memory_soft_limit | default(False) %}
+  --memory-reservation {{ promtail_memory_soft_limit }} \
+{% endif %}
+{% if promtail_cpu_shares | default(False) %}
+  --cpu-shares {{ promtail_cpu_shares }} \
+{% endif %}
+{% if promtail_number_of_cpus | default(False) %}
+  --cpus {{ promtail_number_of_cpus }} \
+{% endif %}
 {% for item in promtail_default_labels + promtail_extra_labels %}
   --label {{ item }} \
 {% endfor %}
