@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/rolehippie/promtail/compare/v1.2.0...v1.2.1) (2023-09-25)
+
+
+### Bugfixes
+
+* **deps:** update dependency grafana/loki to v2.9.1 ([560c55d](https://github.com/rolehippie/promtail/commit/560c55dccfb68b0d9193cb0a60f0c580095503a1))
+
 ## [1.2.0](https://github.com/rolehippie/promtail/compare/v1.1.0...v1.2.0) (2023-09-11)
 
 
