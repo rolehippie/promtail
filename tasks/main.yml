@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Create required directories
   loop: "{{ promtail_default_folders + promtail_extra_folders }}"
