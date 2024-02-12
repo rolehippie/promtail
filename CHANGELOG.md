@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/promtail/compare/v1.2.4...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([2e4259e](https://github.com/rolehippie/promtail/commit/2e4259e21259754b5fc9fddde34ddd5a02cf49d4))
+* used full qualified collection names ([2cc2b7d](https://github.com/rolehippie/promtail/commit/2cc2b7dc662b2332515d12e0a250f73ce87bb0cd))
+
+
+### Bugfixes
+
+* remove meta requirements and document used collections ([02f7b29](https://github.com/rolehippie/promtail/commit/02f7b29556e5c264ebe2c3ff3fde1eee64b63120))
+
 ## [1.2.4](https://github.com/rolehippie/promtail/compare/v1.2.3...v1.2.4) (2024-01-29)
 
 
