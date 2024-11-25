@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.0](https://github.com/rolehippie/promtail/compare/v3.2.1...v3.3.0) (2024-11-25)
+
+
+### Features
+
+* **deps:** update dependency grafana/loki to v3.3.0 ([#37](https://github.com/rolehippie/promtail/issues/37)) ([25d6d5f](https://github.com/rolehippie/promtail/commit/25d6d5f46708a92daa5d399b84078e66b044c28b))
+
 ## [3.2.1](https://github.com/rolehippie/promtail/compare/v3.2.0...v3.2.1) (2024-10-28)
 
 
