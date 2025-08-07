@@ -1,7 +1,7 @@
 ---
 # @var promtail_version:description: Version of the release to install
 # renovate: datasource=github-releases depName=grafana/loki
-promtail_version: 3.5.2
+promtail_version: 3.5.3
 
 # @var promtail_image:description: Docker image to use for deployment
 promtail_image: "grafana/promtail:{{ promtail_version }}"
