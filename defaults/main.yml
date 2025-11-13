@@ -7,7 +7,7 @@ promtail_version: 3.5.7
 promtail_image: "grafana/promtail:{{ promtail_version }}"
 
 # @var promtail_pull_image:description: Pull image as part of the tasks
-promtail_pull_image: True
+promtail_pull_image: true
 
 # @var promtail_network:description: Optional docker network to attach
 promtail_network:
