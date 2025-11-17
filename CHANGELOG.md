@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.0](https://github.com/rolehippie/promtail/compare/v3.5.7...v3.6.0) (2025-11-17)
+
+
+### Features
+
+* apply new repo structure and update linting ([3ef0f0a](https://github.com/rolehippie/promtail/commit/3ef0f0aeeb4ae811686304b95330ac032d887461))
+
 ## [3.5.7](https://github.com/rolehippie/promtail/compare/v3.5.6...v3.5.7) (2025-10-20)
 
 
