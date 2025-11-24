@@ -1,5 +1,19 @@
 # Changelog
 
+## [4.0.0](https://github.com/rolehippie/promtail/compare/v3.6.0...v4.0.0) (2025-11-24)
+
+
+### Features
+
+* **major:** update dependency community.docker to v5 ([07d6572](https://github.com/rolehippie/promtail/commit/07d65729debe3310fc834fffabfc22624026fae9))
+* **minor:** update dependency grafana/loki to v3.6.0 ([#66](https://github.com/rolehippie/promtail/issues/66)) ([264381c](https://github.com/rolehippie/promtail/commit/264381cf3155b294fb69bb0b2787f719b38c25d5))
+
+
+### Bugfixes
+
+* **patch:** update dependency grafana/loki to v3.5.8 ([#62](https://github.com/rolehippie/promtail/issues/62)) ([72a3c6f](https://github.com/rolehippie/promtail/commit/72a3c6fcd781e1b787b21e2b6a09393863540986))
+* **patch:** update dependency grafana/loki to v3.6.1 ([#69](https://github.com/rolehippie/promtail/issues/69)) ([6a39b6f](https://github.com/rolehippie/promtail/commit/6a39b6f3389f392c69ce1d1bdb3398c516a845f1))
+
 ## [3.6.0](https://github.com/rolehippie/promtail/compare/v3.5.7...v3.6.0) (2025-11-17)
 
 
