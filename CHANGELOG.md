@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.0.3](https://github.com/rolehippie/promtail/compare/v4.0.2...v4.0.3) (2026-01-26)
+
+### Dependencies
+
+* **patch:** update dependency grafana/loki to v3.6.4 ([#83](https://github.com/rolehippie/promtail/issues/83)) ([ad7a778](https://github.com/rolehippie/promtail/commit/ad7a778d3a150b86f97d3c271f8569cbb9c75ea2))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([6d41a39](https://github.com/rolehippie/promtail/commit/6d41a39208158cf9bab34d6daf72afc3909932bf))
+* **flake:** updated lockfile [skip ci] ([f8792bd](https://github.com/rolehippie/promtail/commit/f8792bdc671136219e8e20379c1f2a2865bc4e51))
+* **flake:** updated lockfile [skip ci] ([36343c5](https://github.com/rolehippie/promtail/commit/36343c53538ebfb5dca0a79e3fbd67e53e1f69f5))
+* **flake:** updated lockfile [skip ci] ([60c835e](https://github.com/rolehippie/promtail/commit/60c835e22bbd67c7482559ca022bca43a04f6497))
+* **flake:** updated lockfile [skip ci] ([a0b46f2](https://github.com/rolehippie/promtail/commit/a0b46f2d02242929cd9d1b1610170d4c29e0b115))
+* **flake:** updated lockfile [skip ci] ([cb4b80e](https://github.com/rolehippie/promtail/commit/cb4b80eb66b766969d71c2a5743f3907fab361d9))
+
 ## [4.0.2](https://github.com/rolehippie/promtail/compare/v4.0.1...v4.0.2) (2025-12-15)
 
 
